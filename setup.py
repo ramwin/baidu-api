@@ -9,7 +9,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="baidu-api",
-    version="0.0.1",
+    version="0.0.2",
     author="Xiang Wang",
     author_email="ramwin@qq.com",
     description="the python sdk for baidu",
@@ -18,6 +18,7 @@ setuptools.setup(
     url="https://github.com/ramwin/baidu-api",
     packages=setuptools.find_packages(),
     classifiers=[
+        'Programming Language :: Python :: 2',
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
