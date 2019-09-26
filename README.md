@@ -1,5 +1,9 @@
-# baidu-api
-调用百度的接口
+百度sdk
+
+# 安装
+```
+pip install baidu-api
+```
 
 # 文档
 ```
@@ -11,6 +15,15 @@
 >>> result, detail = TextCensor(client).is_allowed("在线阅读色情小说,在线赌博,枪支弹药购买: https://iqiyi.com")
 >>> result == "rejected"
 True
+```
+## 使用redis缓存`access_token`
+```
+from redis import Redis
+from baidu.session.redisstorage import RedisStorage
+redis_client = Redis.from_url("redis://localhost:6379/0")
+session_interface = RedisStorage(redis_client, prefix="baiduapi")
+baidu_client = BaiduClient(app_id, api_key, secret_key,
+                           session=session_interface)
 ```
 
 # 感谢

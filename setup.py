@@ -8,7 +8,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="baidu",
+    name="baidu-api",
     version="0.0.1",
     author="Xiang Wang",
     author_email="ramwin@qq.com",
