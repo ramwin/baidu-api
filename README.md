@@ -1,4 +1,5 @@
-百度sdk
+百度sdk. 
+没必要用这个项目了, 百度有[专门的sdk](https://github.com/Baidu-AIP/python-sdk), 此项目估计没必要维护了
 
 # 安装
 ```
